@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<cockatrice_carddatabase version="2">
+    <sets>
+        <set>
+            <name>5ED</name>
+            <longname>Fifth Edition</longname>
+        </set>
+        <set>
+            <name>M10</name>
+            <longname>Magic 2010</longname>
+        </set>
+        <set>
+            <name>M11</name>
+            <longname>Magic 2011</longname>
+        </set>
+        <set>
+            <name>MED</name>
+            <longname>Master Edition</longname>
+        </set>
+        <set>
+            <name>ME4</name>
+            <longname>Master Edition IV</longname>
+        </set>
+
+    </sets>
+    <cards>
+        <card>
+            <name>Black Knight</name>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=3826&amp;type=card" picURLHq="" picURLSt="">5ED</set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=159817&amp;type=card" picURLHq="" picURLSt="">MED</set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=221568&amp;type=card" picURLHq="" picURLSt="">ME4</set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=190540&amp;type=card" picURLHq="" picURLSt="">M10</set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205218&amp;type=card" picURLHq="" picURLSt="">M11</set>
+            <color>B</color>
+            <manacost>BB</manacost>
+            <type>Creature - Human Knight</type>
+            <pt>2/2</pt>
+            <tablerow>2</tablerow>
+            <text>First strike (This creature deals combat damage before creatures without first strike.)
+                Protection from white (This creature can't be blocked, targeted, dealt damage, or enchanted by anything white.)</text>
+        </card>
+    </cards>
+</cockatrice_carddatabase>
