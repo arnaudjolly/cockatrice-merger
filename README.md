@@ -36,7 +36,9 @@ If this seems like hieroglyphs to you, just grab the JAR file at the root direct
 You need Java as this tool is an executable JAR file and as we are true men we use the powerful command-line!
 
 Get a prompt and type:
+
 	java -jar <name-of-the-jar-file.jar> <file1> <file2> ...
+
 where file1, file2, ... are the successive path of cards.xml files you collected before.
 
 This tool will generate a cards.fused.xml that is what you are looking for till the beginning. Rename it in cards.xml and say to Cockatrice to use that file as a carddatabase and you got it!
