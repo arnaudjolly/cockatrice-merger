@@ -1,11 +1,5 @@
 package net.jolly.cardsxmlmerger;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
 import net.jolly.cardsxmlmerger.model.Card;
 import net.jolly.cardsxmlmerger.model.Extension;
 import net.jolly.cardsxmlmerger.tools.CardsXMLLoader;
@@ -13,13 +7,18 @@ import net.jolly.cardsxmlmerger.tools.CardsXMLWriter;
 import org.apache.log4j.Logger;
 
 import javax.xml.stream.XMLStreamException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CardsXMLMerger {
 
     private static final Logger log = Logger.getLogger(CardsXMLMerger.class);
 
 
-	public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
         if (args == null || args.length < 2) {
             log.error("Usage: ./cards-xml-merger.jar <file1> <file2> [<file3>...]");
             return;
@@ -33,12 +32,12 @@ public class CardsXMLMerger {
         log.info(String.format("A total of %d cards for %d sets. !", cards.size(), sets.size()));
 
         writeFile(cards, sets);
-		log.info("Done!");
-	}
+        log.info("Done!");
+    }
 
     static void loadFiles(String[] fileNames, Map<String, Card> cards, Map<String, Extension> sets) throws XMLStreamException, IOException {
-        for (int i = 0; i < fileNames.length; i++) {
-            loadFile(fileNames[i], cards, sets);
+        for (String filename : fileNames) {
+            loadFile(filename, cards, sets);
         }
     }
 

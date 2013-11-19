@@ -17,29 +17,45 @@
     <cards>
         <card>
             <name>Black Knight</name>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=50&amp;type=card" picURLHq="" picURLSt="">LEA</set>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=345&amp;type=card" picURLHq="" picURLSt="">LEB</set>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=647&amp;type=card" picURLHq="" picURLSt="">2ED</set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=50&amp;type=card" picURLHq=""
+                 picURLSt="">LEA
+            </set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=345&amp;type=card" picURLHq=""
+                 picURLSt="">LEB
+            </set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=647&amp;type=card" picURLHq=""
+                 picURLSt="">2ED
+            </set>
             <color>B</color>
             <manacost>BB</manacost>
             <type>Creature - Human Knight</type>
             <pt>2/2</pt>
             <tablerow>2</tablerow>
             <text>First strike (This creature deals combat damage before creatures without first strike.)
-                Protection from white (This creature can't be blocked, targeted, dealt damage, or enchanted by anything white.)</text>
+                Protection from white (This creature can't be blocked, targeted, dealt damage, or enchanted by anything
+                white.)
+            </text>
         </card>
         <card>
             <name>White Knight</name>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=274&amp;type=card" picURLHq="" picURLSt="">LEA</set>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=570&amp;type=card" picURLHq="" picURLSt="">LEB</set>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=872&amp;type=card" picURLHq="" picURLSt="">2ED</set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=274&amp;type=card" picURLHq=""
+                 picURLSt="">LEA
+            </set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=570&amp;type=card" picURLHq=""
+                 picURLSt="">LEB
+            </set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=872&amp;type=card" picURLHq=""
+                 picURLSt="">2ED
+            </set>
             <color>W</color>
             <manacost>WW</manacost>
             <type>Creature - Human Knight</type>
             <pt>2/2</pt>
             <tablerow>2</tablerow>
             <text>First strike (This creature deals combat damage before creatures without first strike.)
-Protection from black (This creature can't be blocked, targeted, dealt damage, or enchanted by anything black.)</text>
+                Protection from black (This creature can't be blocked, targeted, dealt damage, or enchanted by anything
+                black.)
+            </text>
         </card>
     </cards>
 </cockatrice_carddatabase>
