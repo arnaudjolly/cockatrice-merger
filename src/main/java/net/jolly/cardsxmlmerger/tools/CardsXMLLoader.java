@@ -16,6 +16,13 @@ public class CardsXMLLoader {
 
     private InputStream is;
 
+    /**
+     * Read the input stream of a cards.xml file to store its content in cards and sets collections.
+     * @param cards the collection of cards to update/complete
+     * @param extensions    the collection of sets to update/complete
+     * @throws XMLStreamException   TODO: complete this
+     * @throws IOException  TODO: complete this
+     */
     public void load(Map<String, Card> cards, Map<String, Extension> extensions) throws XMLStreamException, IOException {
         XMLInputFactory xmlif = XMLInputFactory.newInstance();
         XMLEventReader xmler = xmlif.createXMLEventReader(is);
@@ -37,6 +44,12 @@ public class CardsXMLLoader {
         xmler.close();
     }
 
+    /**
+     * Parse the &lt;cards/&gt; block of the cards.xml file
+     * @param xmler the event reader to continue the parsing inside the block
+     * @param cards the collection of cards to update
+     * @throws XMLStreamException TODO complete this
+     */
     private void filterCards(XMLEventReader xmler, Map<String, Card> cards) throws XMLStreamException {
         XMLEvent event;
         Card card = new Card();
@@ -64,6 +77,12 @@ public class CardsXMLLoader {
         }
     }
 
+    /**
+     * Parse the &lt;sets/&gt; block of the cards.xml file
+     * @param xmler
+     * @param sets
+     * @throws XMLStreamException
+     */
     private void filterSets(XMLEventReader xmler, Map<String, Extension> sets) throws XMLStreamException {
         XMLEvent event;
         Extension extension = new Extension();
