@@ -17,15 +17,9 @@
     <cards>
         <card>
             <name>Black Knight</name>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=50&amp;type=card" picURLHq=""
-                 picURLSt="">LEA
-            </set>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=345&amp;type=card" picURLHq=""
-                 picURLSt="">LEB
-            </set>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=647&amp;type=card" picURLHq=""
-                 picURLSt="">2ED
-            </set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=50&amp;type=card" picURLHq="" picURLSt="">LEA</set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=345&amp;type=card" picURLHq="" picURLSt="">LEB</set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=647&amp;type=card" picURLHq="" picURLSt="">2ED</set>
             <color>B</color>
             <manacost>BB</manacost>
             <type>Creature - Human Knight</type>
@@ -38,15 +32,9 @@
         </card>
         <card>
             <name>White Knight</name>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=274&amp;type=card" picURLHq=""
-                 picURLSt="">LEA
-            </set>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=570&amp;type=card" picURLHq=""
-                 picURLSt="">LEB
-            </set>
-            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=872&amp;type=card" picURLHq=""
-                 picURLSt="">2ED
-            </set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=274&amp;type=card" picURLHq="" picURLSt="">LEA</set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=570&amp;type=card" picURLHq="" picURLSt="">LEB</set>
+            <set picURL="http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=872&amp;type=card" picURLHq="" picURLSt="">2ED</set>
             <color>W</color>
             <manacost>WW</manacost>
             <type>Creature - Human Knight</type>
