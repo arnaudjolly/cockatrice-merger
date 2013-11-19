@@ -4,6 +4,8 @@ import net.jolly.cardsxmlmerger.model.Card;
 import net.jolly.cardsxmlmerger.model.Extension;
 import net.jolly.cardsxmlmerger.tools.CardsXMLLoader;
 import net.jolly.cardsxmlmerger.tools.CardsXMLWriter;
+import net.jolly.cardsxmlmerger.tools.impl.EventReaderLoader;
+import net.jolly.cardsxmlmerger.tools.impl.EventWriter;
 import org.apache.log4j.Logger;
 
 import javax.xml.stream.XMLStreamException;
@@ -65,8 +67,9 @@ public class CardsXMLMerger {
      */
     static void writeFile(Map<String, Card> cards, Map<String, Extension> sets) throws XMLStreamException, IOException {
         log.info("Writing file...");
-        CardsXMLWriter xmlWriter = new CardsXMLWriter();
-        xmlWriter.write(sets, cards);
+        //CardsXMLWriter xmlWriter = new EventWriter();
+        CardsXMLWriter xmlWriter = new EventWriter();
+        xmlWriter.write("cards.fused.xml", sets, cards);
     }
 
     /**
@@ -80,8 +83,9 @@ public class CardsXMLMerger {
      */
     static void loadFile(String fileName, Map<String, Card> cards, Map<String, Extension> sets) throws XMLStreamException, IOException {
         log.info(String.format("Reading file: '%s'...", fileName));
-        FileInputStream fis1 = new FileInputStream(new File(fileName));
-        CardsXMLLoader xmlLoader1 = new CardsXMLLoader(fis1);
+        FileInputStream fis = new FileInputStream(new File(fileName));
+        //CardsXMLLoader xmlLoader1 = new StreamReaderLoader(fis);
+        CardsXMLLoader xmlLoader1 = new EventReaderLoader(fis);
         xmlLoader1.load(cards, sets);
     }
 
