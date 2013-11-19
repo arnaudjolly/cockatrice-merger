@@ -15,7 +15,7 @@ So, we supposed you solved the first problem. You compiled the Oracle tool, run 
 
 BAM! Some sets have 0 card in them and others seem fine. As you want a perfect card-database, you have some solutions:
 - downloading the entire sets again hoping this time it will work for every sets
-- asking for a complete {cards.xml} to a friend with the risk that he personified his sets 'shortname' and you will lose your picture settings (i.e. the pictures of cards you already have downloaded will stay in place but Cockatrice will forget them and redownload them as they are not from the same set for it)
+- asking for a complete ``cards.xml`` to a friend with the risk that he personified his sets 'shortname' and you will lose your picture settings (i.e. the pictures of cards you already have downloaded will stay in place but Cockatrice will forget them and redownload them as they are not from the same set for it)
 - use this stupid but useful tool.
 
 # I can't believe it! Tell me more!
@@ -36,7 +36,7 @@ If this seems like hieroglyphs to you, just grab the JAR file at the root direct
 You need Java as this tool is an executable JAR file and as we are true men we use the powerful command-line!
 
 Get a prompt and type:
-  java -jar <name-of-the-jar-file.jar> <file1> <file2> ...
+	java -jar <name-of-the-jar-file.jar> <file1> <file2> ...
 where file1, file2, ... are the successive path of cards.xml files you collected before.
 
 This tool will generate a cards.fused.xml that is what you are looking for till the beginning. Rename it in cards.xml and say to Cockatrice to use that file as a carddatabase and you got it!
