@@ -28,9 +28,9 @@ Well, you can do this last step by:
 # Ok, what do I need to run your tool ?
 
 ## To build it...
-You need a Java IDE (Eclipse, IntelliJ Idea, Netbeans, VIm, don't take eMacs as it stinks! ;) ), a Java SDK and a configured Maven.
+You need a Java IDE (Eclipse, IntelliJ Idea, Netbeans, VIm, don't take eMacs please! ;) ), a Java SDK (8+) and a configured Maven.
 
-If this seems like hieroglyphs to you, just grab the JAR file at the root directory and follow the next paragraph.
+If this seems like hieroglyphs to you, just grab the JAR file in the release tab in github and grab a version. 
 
 ## To run it...
 You need Java as this tool is an executable JAR file and as we are true men we use the powerful command-line!
