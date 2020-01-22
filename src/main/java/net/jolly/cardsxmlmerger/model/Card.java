@@ -20,8 +20,8 @@ public class Card {
 
     public Card() {
         super();
-        this.colors = new HashSet<String>();
-        this.picURLForSets = new HashMap<String, String>();
+        this.colors = new HashSet<>();
+        this.picURLForSets = new HashMap<>();
     }
 
     public void addPicURLForSet(String set, String url) {

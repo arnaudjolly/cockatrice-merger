@@ -17,7 +17,7 @@ public class Extension {
 
     public Extension() {
         super();
-        this.cards = new HashSet<Card>();
+        this.cards = new HashSet<>();
     }
 
 }

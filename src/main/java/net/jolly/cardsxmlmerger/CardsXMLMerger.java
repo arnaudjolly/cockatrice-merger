@@ -23,7 +23,7 @@ public class CardsXMLMerger {
      * Main method, entry point of the executable jar file.
      *
      * @param args paths of cards.xml files we want to merge
-     * @throws Exception
+     * @throws Exception when shit occurs
      */
     public static void main(String[] args) throws Exception {
         if (args == null || args.length < 2) {
@@ -31,8 +31,8 @@ public class CardsXMLMerger {
             return;
         }
 
-        Map<String, Card> cards = new HashMap<String, Card>();
-        Map<String, Extension> sets = new HashMap<String, Extension>();
+        Map<String, Card> cards = new HashMap<>();
+        Map<String, Extension> sets = new HashMap<>();
 
         loadFiles(args, cards, sets);
 

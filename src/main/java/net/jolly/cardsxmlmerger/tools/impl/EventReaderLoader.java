@@ -20,8 +20,13 @@ public class EventReaderLoader implements CardsXMLLoader {
 
     private InputStream is;
 
+    public EventReaderLoader(InputStream is) {
+        super();
+        this.is = is;
+    }
+
     @Override
-    public void load(Map<String, Card> cards, Map<String, Extension> extensions) throws XMLStreamException, IOException {
+    public void load(Map<String, Card> cards, Map<String, Extension> extensions) throws XMLStreamException {
         XMLInputFactory xmlif = XMLInputFactory.newInstance();
         XMLEventReader xmler = xmlif.createXMLEventReader(is);
 
@@ -47,8 +52,7 @@ public class EventReaderLoader implements CardsXMLLoader {
      *
      * @param xmler the event reader to continue the parsing inside the block
      * @param cards the collection of cards to update
-     * @throws javax.xml.stream.XMLStreamException
-     *          TODO complete this
+     * @throws javax.xml.stream.XMLStreamException TODO complete this
      */
     private void filterCards(XMLEventReader xmler, Map<String, Card> cards) throws XMLStreamException {
         XMLEvent event;
@@ -82,8 +86,7 @@ public class EventReaderLoader implements CardsXMLLoader {
      *
      * @param xmler the event reader to continue the parsing inside the block
      * @param sets  the collection of sets to update
-     * @throws javax.xml.stream.XMLStreamException
-     *
+     * @throws javax.xml.stream.XMLStreamException when shit occurs
      */
     private void filterSets(XMLEventReader xmler, Map<String, Extension> sets) throws XMLStreamException {
         XMLEvent event;
@@ -221,11 +224,6 @@ public class EventReaderLoader implements CardsXMLLoader {
         } else if (event.isEndElement()) {
             card.setType("");
         }
-    }
-
-    public EventReaderLoader(InputStream is) {
-        super();
-        this.is = is;
     }
 
 }

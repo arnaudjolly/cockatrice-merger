@@ -6,7 +6,7 @@ import net.jolly.cardsxmlmerger.tools.CardsXMLLoader;
 import org.junit.Test;
 
 import java.io.InputStream;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
@@ -18,8 +18,8 @@ public class EventReaderLoaderTest {
         InputStream stream = getClass().getClassLoader().getResourceAsStream("black_white_knight_ABU.xml");
 
         CardsXMLLoader xmlLoader = new EventReaderLoader(stream);
-        Map<String, Card> cards = new HashMap<String, Card>();
-        Map<String, Extension> sets = new HashMap<String, Extension>();
+        Map<String, Card> cards = new LinkedHashMap<>();
+        Map<String, Extension> sets = new LinkedHashMap<>();
         xmlLoader.load(cards, sets);
 
         assertEquals(2, cards.size());
