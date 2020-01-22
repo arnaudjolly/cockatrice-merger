@@ -6,7 +6,8 @@ import net.jolly.cardsxmlmerger.tools.CardsXMLLoader;
 import net.jolly.cardsxmlmerger.tools.CardsXMLWriter;
 import net.jolly.cardsxmlmerger.tools.impl.EventReaderLoader;
 import net.jolly.cardsxmlmerger.tools.impl.EventWriter;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.xml.stream.XMLStreamException;
 import java.io.File;
@@ -17,7 +18,7 @@ import java.util.Map;
 
 public class CardsXMLMerger {
 
-    private static final Logger log = Logger.getLogger(CardsXMLMerger.class);
+    private static final Logger log = LoggerFactory.getLogger(CardsXMLMerger.class);
 
     /**
      * Main method, entry point of the executable jar file.

@@ -1,13 +1,11 @@
 package net.jolly.cardsxmlmerger.model;
 
-import lombok.Data;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-@Data
 public class Card {
     private String name;
     private Set<String> colors;
@@ -40,4 +38,59 @@ public class Card {
         return colors.add(color);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Set<String> getColors() {
+        return colors;
+    }
+
+    public String getManacost() {
+        return manacost;
+    }
+
+    public void setManacost(String manacost) {
+        this.manacost = manacost;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getPt() {
+        return pt;
+    }
+
+    public void setPt(String pt) {
+        this.pt = pt;
+    }
+
+    public int getTablerow() {
+        return tablerow;
+    }
+
+    public void setTablerow(int tablerow) {
+        this.tablerow = tablerow;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public Map<String, String> getPicURLForSets() {
+        return picURLForSets;
+    }
 }
