@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.jolly</groupId>
     <artifactId>cards-xml-merger</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>CardsXMLMerger</name>
     <description>A Tool to merge 2 cards.xml files for Cockatrice.
         Why? Because when a new extension comes out, you don't want to fetch every cards you already have fetched last
