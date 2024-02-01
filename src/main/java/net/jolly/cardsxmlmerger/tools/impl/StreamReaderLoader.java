@@ -14,8 +14,8 @@ import java.util.Map;
  */
 public class StreamReaderLoader implements CardsXMLLoader {
 
-    @Override
-    public void load(Map<String, Card> cards, Map<String, Extension> extensions) throws XMLStreamException, IOException {
-        // TODO codes it!
-    }
+	@Override
+	public void load(Map<String, Card> cards, Map<String, Extension> extensions) throws XMLStreamException, IOException {
+		// TODO codes it!
+	}
 }
